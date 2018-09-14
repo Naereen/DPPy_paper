@@ -18,13 +18,16 @@ install:
 script:
 - cd tex
 - pdflatex --shell-escape dppy_paper.tex # --shell-escape option for minted pkg
+- pdflatex --shell-escape dppy_cover_letter.tex
 - cd ..
 deploy:
   skip_cleanup: true
   provider: releases
   api_key:
-    secure: ####
-  file: tex/dppy_paper.pdf
+    secure: #### 
+  file: 
+    - tex/dppy_paper.pdf
+    - tex/dppy_cover_letter.pdf
   on:
     repo: guilgautier/DPPy_paper
     tags: true

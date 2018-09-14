@@ -23,7 +23,8 @@ pip install .
 ## Build the PDF
 
 ```bash
-pdflatex --shell-escape tex/dppy_paper.tex
+cd tex
+pdflatex --shell-escape dppy_paper.tex
 ```
 
 ### How to cite this work?
