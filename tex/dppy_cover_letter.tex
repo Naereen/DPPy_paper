@@ -1,0 +1,74 @@
+\documentclass[twoside,11pt]{article}
+
+% Any additional packages needed should be included after jmlr2e.
+% Note that jmlr2e.sty includes epsfig, amssymb, natbib and graphicx,
+% and defines many common macros, such as 'proof' and 'example'.
+%
+% It also sets the bibliographystyle to plainnat; for more information on
+% natbib citation styles, see the natbib documentation, a copy of which
+% is archived at http://www.jmlr.org/format/natbib.pdf
+
+\usepackage{jmlr2ecover}
+\input{packages}
+\input{commands}
+
+% Heading arguments are {volume}{year}{pages}{date submitted}{date published}{paper id}{author-full-names}
+
+% \jmlrheading{xx}{2018}{xx-xx}{9/18}{xx/xx}{gabava18}{Guillaume Gautier, R\'emi Bardenet, and Michal Valko}
+
+% Short headings should be running head and authors last names
+
+% \ShortHeadings{\DPPy}{Gautier, Bardenet, and Valko}
+
+\begin{document}
+
+\title{\emph{Cover letter}\\[1em]
+\DPPy: Sampling Determinantal Point Processes with Python}
+
+\author{\name Guillaume Gautier$^{*,\dagger}$ \email g.gautier@inria.fr \\
+       \name R\'emi Bardenet$^\dagger$ \email remi.bardenet@gmail.com \\
+       \name Michal Valko$^*$ \email michal.valko@inria.fr\\
+       \addr $^*$SequeL team, INRIA Lille - Nord Europe,  40, avenue Halley 59650, Villeneuve d'Ascq, France\\
+       \addr $^\dagger$Univ.\,Lille, CNRS, Centrale Lille, UMR 9189 - CRIStAL, 59651 Villeneuve d'Ascq, France
+}
+
+% \editor{}
+
+\maketitle
+
+\vspace{4em}
+
+\pagenumbering{gobble}
+\setcounter{footnote}{3}
+
+Dear Editorial Board,\\
+
+We submit the \DPPy\ Python library to the machine learning open source software (MLOSS) section of the Journal of Machine Learning Research.
+
+\todo{(gg) Add purpose of DPPy}
+
+The project is hosted on GitHub\footnote{\url{https://github.com/guilgautier/DPPy}} and supported by an extensive documentation\footnote{\url{https://dppy.readthedocs.io}} which provides the essential mathematical background and illustrates some key properties of DPPs through \DPPy\ objects and their methods.
+We use Travis\footnote{\url{https://travis-ci.com/guilgautier/DPPy}} for continuous integration and to certify that \DPPy\ runs on Linux and MacOS plateforms with Python 3.4+.\\
+
+In line with the reproducibily purpose, \DPPy\ does not rely on any proprietary software and is released under the MIT license.
+Moreover, the companion paper\footnote{\url{https://github.com/guilgautier/DPPy_paper}} together with the present cover letter are also available on GitHub and fully reproducible.
+
+\begin{itemize}
+  \item \todo{(gg) should we give a brief explaination about how it is done with Travis ?}
+  \item \todo{(gg) tag final commit of DPPy\_paper to create a release through Travis}\\
+\end{itemize}
+
+We declare that this work is neither published nor submitted to any journal or conference.
+All authors agree to the reviewing process of the Journal of Machine Learning Research.
+We declare no conflict of interest whatsoever.\\
+
+Thank you for your consideration.\\
+
+Mr. Guillaume Gautier (Ph.D. student)\\
+\indent Dr. Rémi Bardenet (Research scientist)\\
+\indent Dr. Michal Valko (Research scientist)\\
+
+Version to be reviewed: \DPPy\ \href{https://github.com/guilgautier/DPPy}{v0.1.0}
+\todo{(gg) tag final commit of DPPy to create a release through Travis}\\
+
+\end{document}
