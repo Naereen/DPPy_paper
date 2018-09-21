@@ -2,48 +2,43 @@
 
 [![Build Status](https://travis-ci.com/guilgautier/DPPy_paper.svg?token=jftmsjDJSt2JLJqsgR9n&branch=master)](https://travis-ci.com/guilgautier/DPPy_paper)
 
-This is the companion paper associated with the [DPPy](https://github.com/guilgautier/DPPy) Python library which equipped with an extensive [documentation](https://dppy.readthedocs.io/en/latest/).
-
-## Dependencies
-
-[Pygments](http://pygments.org/) to use `minted` package for highlighting code.
-
-```bash
-pip install pygments
-```
-
-## Install the project
-
-```bash
-git clone https://github.com/guilgautier/DPPy_paper.git
-cd DPPy_paper
-pip install .
-```
+This is the `cover_letter` branch associated to the [companion paper](https://github.com/guilgautier/DPPy_paper) for [DPPy](https://github.com/guilgautier/DPPy) Python library which equipped with an extensive [documentation](https://dppy.readthedocs.io/en/latest/).
 
 ## Build the PDF
 
 ```bash
-cd tex
-pdflatex --shell-escape dppy_paper.tex
+git clone https://github.com/guilgautier/DPPy_paper.git
+git checkout cover_letter
+cd DPPy_paper/tex
+pdflatex cover_letter.tex
 ```
 
 ### How to cite this work?
 
-[DPPy](https://github.com/guilgautier/DPPy) has the present [companion paper](https://github.com/guilgautier/DPPy_paper) to be submitted to the [JMLR Machine Learning Open Source Software](http://www.jmlr.org/mloss/) track.
+We wrote this companion paper to [DPPy](https://github.com/guilgautier/DPPy) for latter submission to the [MLOSS](http://www.jmlr.org/mloss/) track of JMLR.
 
-If you use this package, please consider citing it with this piece of BibTeX:
+The companion paper is available on:
+- [arXiv](http://arxiv.org/abs/1809.07258) or see the [`arxiv`](https://github.com/guilgautier/DPPy_paper/tree/arxiv) branch
+- [GitHub](https://github.com/guilgautier/DPPy_paper)
+
+If you use this package, please consider citing it with this piece of BibTeX
 ```bibtex
-@misc{DPPy,
-    title =   {{DPPy: Sampling Determinantal Point Processes with Python}},
-    author =  {Guillaume Gautier, Rémi Bardenet, Michal Valko},
-    year =    {2018},
-    url =     {https://github.com/guilgautier/DPPy/},
-    howpublished = {Online at: \url{github.com/guilgautier/DPPy/}},
-    note =    {Code at https://github.com/guilgautier/DPPy/, documentation at https://dppy.readthedocs.io/, companion paper at https://github.com/guilgautier/DPPy_paper/}
+@article{GaBaVa18,,
+    archivePrefix = {arXiv},
+    arxivId = {1809.07258},
+    author = {Gautier, Guillaume and Bardenet, R{\'{e}}mi and Valko, Michal},
+    eprint = {1809.07258},
+    journal = {ArXiv e-prints},
+    title = {{DPPy: Sampling Determinantal Point Processes with Python}},
+    keywords = {Computer Science - Machine Learning, Computer Science - Mathematical Software, Statistics - Machine Learning},
+    url = {http://arxiv.org/abs/1809.07258},
+    year = {2018},
+    note = {Code at http://github.com/guilgautier/DPPy/ Documentation at http://dppy.readthedocs.io/}
 }
 ```
 
 ## Reproducibility
 
-This paper advertising the [DPPy](https://github.com/guilgautier/DPPy) Python library would have never existed without [Guillermo Polito](https://github.com/guillep) who is leading the [reproducible work group](https://github.com/CRIStAL-PADR/reproducible-research-SE-notes).
+We would like to thank [Guillermo Polito](https://guillep.github.io/) for leading our reproducible research [workgroup](https://github.com/CRIStAL-PADR/reproducible-research-SE-notes), this project owes him a lot.
+
 Take a look at the corresponding [booklet](https://github.com/CRIStAL-PADR/reproducible-research-SE-notes) to learn more on how to make your research reproducible!
