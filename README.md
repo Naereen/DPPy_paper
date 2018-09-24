@@ -1,7 +1,5 @@
 # DPPy_paper
 
-[![Build Status](https://travis-ci.com/guilgautier/DPPy_paper.svg?token=jftmsjDJSt2JLJqsgR9n&branch=master)](https://travis-ci.com/guilgautier/DPPy_paper)
-
 This is the `cover_letter` branch associated to the [companion paper](https://github.com/guilgautier/DPPy_paper) for [DPPy](https://github.com/guilgautier/DPPy) Python library which equipped with an extensive [documentation](https://dppy.readthedocs.io/en/latest/).
 
 ## Build the PDF
